@@ -4,39 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Budget Tracker</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
+        <img 
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
+            alt="Budget tracker icon"
+            width="80"
+        >
+
         <h1>My Budget Tracker</h1>
         <p>Track your income and expenses in one place.</p>
     </header>
 
     <main>
 
+        <!-- Add Expense Section -->
         <section id="add-expense">
             <h2>Add Expense</h2>
 
             <form>
                 <label for="expense-name">Expense Name</label>
-                <input type="text" id="expense-name" placeholder="Enter expense name">
+                <input 
+                    type="text" 
+                    id="expense-name" 
+                    placeholder="Enter expense name"
+                >
 
                 <label for="expense-amount">Amount</label>
-                <input type="number" id="expense-amount" placeholder="Enter amount">
+                <input 
+                    type="number" 
+                    id="expense-amount" 
+                    placeholder="Enter amount"
+                >
 
                 <label for="expense-category">Category</label>
-                <input type="text" id="expense-category" placeholder="Enter category">
+                <select id="expense-category">
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="rent">Rent</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
 
-                <button type="submit">Add Expense</button>
+                <button type="button">Add Expense</button>
             </form>
         </section>
 
+        <!-- Expenses Section -->
         <section class="expenses-section">
             <h2>Your Expenses</h2>
-            <p>No expenses yet.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>$45</td>
+                        <td>Food</td>
+                        <td>2026-08-20</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bus Fare</td>
+                        <td>$10</td>
+                        <td>Transport</td>
+                        <td>2026-08-21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Monthly Rent</td>
+                        <td>$300</td>
+                        <td>Rent</td>
+                        <td>2026-08-22</td>
+                    </tr>
+
+                    <tr>
+                        <td>Movie</td>
+                        <td>$15</td>
+                        <td>Entertainment</td>
+                        <td>2026-08-23</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone Credit</td>
+                        <td>$8</td>
+                        <td>Other</td>
+                        <td>2026-08-24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- How to Use Section -->
+        <details>
+            <summary>How to use this tracker</summary>
+
+            <p>
+                Enter the name and amount of an expense, select a category,
+                and click the Add Expense button. The expense table will
+                eventually display new expenses automatically when JavaScript
+                functionality is added in future weeks.
+            </p>
+        </details>
+
+        <!-- Multimedia Section -->
+        <section class="multimedia-section">
+            <h2>Budgeting Tips</h2>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/5rB2-cX4NPM?si=QLNZ7q0jRBYgApnJ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
         </section>
 
     </main>
