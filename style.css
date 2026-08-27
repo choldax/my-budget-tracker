@@ -10,6 +10,11 @@ h1 {
     color: #333;
 }
 
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
 .expenses-section {
     background-color: white;
     padding: 20px;
@@ -38,7 +43,6 @@ h2 {
     color: #444;
 }
 
-/* Submit button styling */
 button[type="submit"] {
     padding: 10px 20px;
     background-color: #333;
