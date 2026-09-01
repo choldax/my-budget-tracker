@@ -2,78 +2,90 @@
 
 ## Project Description
 
-My Budget Tracker is a simple web-based personal budget and expense tracker. This project is being developed step by step throughout the course. In Week 2, I improved the static website by adding an expense table, upgrading the expense form, adding multimedia content, and practicing advanced CSS selectors.
+My Budget Tracker is a simple web-based personal budget and expense tracker. The project is being developed step by step throughout the course. In Week 3, I focused on improving the visual identity and user interface using CSS.
 
-## What I Built
+## Week 3 Visual Design
 
-### 1. Expense Table
+### 1. Color Palette
 
-I added a structured HTML table using:
+I created a consistent color palette using CSS variables. The design uses blue as the main theme color, with a light background, white cards, dark text, and light blue table highlights.
 
-- `<table>`
-- `<thead>`
-- `<tbody>`
-- `<tr>`
-- `<th>`
-- `<td>`
+The colors are applied consistently to:
 
-The table contains four columns:
+- Main headings
+- Section headings
+- Buttons
+- Table headers
+- Table rows
+- Form focus states
+- Other interface elements
 
-- Name
-- Amount
-- Category
-- Date
+### 2. Typography
 
-I also added five sample expense records.
+I used Google Fonts to improve the readability and visual hierarchy of the application.
 
-### 2. Add Expense Form
+- Playfair Display is used for the main headings.
+- DM Sans is used for body text, labels, form controls, buttons, and table content.
 
-I upgraded the Add Expense form by adding:
+The fonts are applied consistently throughout the page.
 
-- Expense name input
-- Amount input
-- Category dropdown
-- Add Expense button
+### 3. Expense Table Styling
 
-The category dropdown contains five options:
+The expense table was improved with:
 
-- Food
-- Transport
-- Rent
-- Entertainment
-- Other
+- Borders around the table and cells
+- Collapsed borders
+- Padding inside cells
+- A dark blue table header
+- Alternating row colors
+- A hover effect when the mouse moves over a row
 
-Each form control has a clear and matching ID.
+These changes make the expense information easier to read.
 
-### 3. Multimedia Content
+### 4. Add Expense Form Styling
 
-I added a budget tracker icon using an `<img>` element with `src`, `alt`, and `width` attributes.
+The Add Expense form was improved with:
 
-I also embedded a YouTube video using an `<iframe>` with width, height, title, and frameborder attributes.
+- Consistent spacing
+- Padding inside inputs
+- Borders
+- Rounded corners
+- Matching typography
+- Focus effects
+- A styled Add Expense button
+- Pointer cursor on the button
 
-### 4. Interactive Elements
+### 5. CSS Box Model
 
-I added a `<details>` and `<summary>` section explaining how to use the tracker.
+I used the CSS box model throughout the application.
 
-I also added a hover effect to the expense table rows and a pointer cursor to the Add Expense button.
+The page uses:
 
-### 5. Advanced CSS Selectors
+- Margin to separate sections
+- Padding to create space inside cards
+- Borders to define sections
+- Border-radius to create rounded corners
 
-I used several advanced CSS selectors, including:
-
-- Descendant selector: `.expenses-section td`
-- Negation selector: `input:not([type="submit"])`
-- Position pseudo-class: `tbody tr:nth-child(even)`
-- Focus pseudo-class: `input:focus`
-- Hover pseudo-class: `tbody tr:hover`
-
-These selectors are used to improve the appearance and interaction of the page.
+The page heading, Add Expense form, and Expense Table are presented as separate visual cards.
 
 ## Files
 
 - `index.html` - Contains the HTML structure and content.
-- `style.css` - Contains the styling and CSS selectors.
-- `README.md` - Explains the project and its features.
+- `style.css` - Contains the visual design, colors, typography, table styling, form styling, and box model properties.
+- `README.md` - Explains the project and the improvements made in Week 3.
+
+## Previous Features
+
+The project also includes:
+
+- An expense table with sample data
+- An Add Expense form
+- A category dropdown
+- A date input
+- A budgeting tips YouTube video
+- A budget tracker image
+- A collapsible How to Use section
+- Advanced CSS selectors
 
 ## Future Development
 
