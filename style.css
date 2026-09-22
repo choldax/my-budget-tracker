@@ -293,3 +293,29 @@ body {
         box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
     }
 }
+.expense-item {
+    background: var(--surface);
+    border: 1px solid #dbe3ec;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.expense-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.expense-item h3 {
+    margin-top: 0;
+}
+
+.expense-item p {
+    margin: 6px 0;
+}
+
+#message {
+    font-weight: 600;
+    margin-top: 15px;
+}

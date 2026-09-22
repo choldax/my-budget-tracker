@@ -141,3 +141,46 @@ For example:
 
 ```text
 Remaining Balance = Monthly Budget - Total Expenses
+## Week 6: Make SpendWise Interactive
+
+This week, I improved SpendWise by adding JavaScript interactivity to the budgeting dashboard. The application can now accept expense information from the user, store multiple expense records, calculate the total expenses, calculate the remaining budget, and display the results directly on the webpage.
+
+### Conditional Statements
+
+SpendWise uses if, else if, and else statements to evaluate the remaining budget. The application checks whether the user is over budget, has reached the budget, has a low remaining balance, or still has a healthy remaining balance.
+
+### Arrays
+
+An expenses array is used to store multiple expense records. Each expense is stored as an object containing the expense name, amount, and category.
+
+### Loops
+
+The forEach() method is used to loop through the expenses array. The loop calculates the total amount spent and also displays each expense record on the webpage.
+
+### DOM Manipulation
+
+SpendWise uses DOM methods such as getElementById(), createElement(), textContent, innerHTML, and appendChild() to update the webpage dynamically. This allows the budget, total expenses, remaining balance, status, and expense list to change without manually refreshing the page.
+
+### Events and User Interactions
+
+An addEventListener() method is attached to the expense form. When the user submits the form, JavaScript captures the information, validates the input, adds the new expense to the array, and updates the dashboard.
+
+The preventDefault() method prevents the browser from refreshing the page when the form is submitted.
+
+### Challenges and Solutions
+
+One challenge was connecting the user input to the dashboard instead of displaying the results only in the browser console. I resolved this by using DOM manipulation to update elements on the webpage.
+
+Another challenge was managing multiple expense records. I used an array to store the records and a forEach() loop to process and display them.
+
+### Week 6 Concepts Demonstrated
+
+- Conditional statements
+- Arrays
+- Objects
+- forEach() loops
+- DOM manipulation
+- Event listeners
+- Form handling
+- Input validation
+- Dynamic webpage updates

@@ -26,6 +26,82 @@
         </aside>
 
         <main class="main-content">
+            <section class="dashboard-section">
+    <h2>Budget Summary</h2>
+
+    <div class="category-grid">
+        <article class="category-card">
+            <h3>Monthly Budget</h3>
+            <p id="budgetDisplay">$1,500</p>
+        </article>
+
+        <article class="category-card">
+            <h3>Total Expenses</h3>
+            <p id="expenseDisplay">$0</p>
+        </article>
+
+        <article class="category-card">
+            <h3>Remaining Balance</h3>
+            <p id="balanceDisplay">$1,500</p>
+        </article>
+
+        <article class="category-card">
+            <h3>Budget Status</h3>
+            <p id="statusDisplay">Good</p>
+        </article>
+    </div>
+</section>
+
+<section class="form-section">
+    <h2>Add an Expense</h2>
+
+    <form id="expenseForm">
+        <label for="expenseName">Expense Name</label>
+        <input
+            type="text"
+            id="expenseName"
+            name="expenseName"
+            placeholder="e.g. Groceries"
+            required
+        >
+
+        <label for="expenseAmount">Amount</label>
+        <input
+            type="number"
+            id="expenseAmount"
+            name="expenseAmount"
+            placeholder="e.g. 45"
+            min="0"
+            step="0.01"
+            required
+        >
+
+        <label for="expenseCategory">Category</label>
+        <select id="expenseCategory" name="expenseCategory" required>
+            <option value="">Select a category</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Rent">Rent</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Savings">Savings</option>
+            <option value="Utilities">Utilities</option>
+        </select>
+
+        <button type="submit">Add Expense</button>
+    </form>
+</section>
+
+<section class="expenses-section">
+    <h2>Your Expenses</h2>
+
+    <div id="expenseList">
+        <p>No expenses added yet.</p>
+    </div>
+</section>
+
+<section class="message-section">
+    <p id="message"></p>
+</section>
 
             <header class="dashboard-header">
                 <div>
