@@ -94,3 +94,50 @@ A dark theme is included as a stretch goal using:
 
 ```css
 @media (prefers-color-scheme: dark)
+## Week 5 - JavaScript Foundation
+
+Week 5 transforms SpendWise from a visual dashboard into an application that can process basic budgeting data using JavaScript.
+
+### JavaScript Concepts Implemented
+
+The project demonstrates:
+
+- Variables
+- Data types
+- User input
+- Number conversion
+- Budget calculations
+- Functions
+- Console output
+
+### Application Variables
+
+JavaScript variables are used to store important budgeting information.
+
+For example:
+
+- `appName` stores the application name.
+- `monthlyBudget` stores the user's monthly budget.
+- `currentExpenses` stores the user's total expenses.
+
+The project uses `const` for values that should not be reassigned and `let` for values that can change.
+
+### User Input
+
+SpendWise collects budgeting information using JavaScript `prompt()` dialogs.
+
+The user provides:
+
+1. A monthly budget.
+2. Total expenses.
+
+The input is initially received as text and is converted into numbers using `Number()` so that JavaScript can perform calculations.
+
+### Budget Calculations
+
+SpendWise calculates the remaining balance by subtracting total expenses from the monthly budget.
+
+For example:
+
+```text
+Remaining Balance = Monthly Budget - Total Expenses
