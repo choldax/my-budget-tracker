@@ -1,92 +1,96 @@
-# My Budget Tracker
+# SpendWise Dashboard
 
-## Project Description
+SpendWise is a static personal budget tracker dashboard built with HTML and CSS. Week 4 focuses on rebuilding the tracker layout using CSS Grid and Flexbox to create a clean, responsive dashboard interface.
 
-My Budget Tracker is a simple web-based personal budget and expense tracker. The project is being developed step by step throughout the course. In Week 3, I focused on improving the visual identity and user interface using CSS.
+## Week 4 Features
 
-## Week 3 Visual Design
+### 1. Dashboard Layout
 
-### 1. Color Palette
+The dashboard includes:
 
-I created a consistent color palette using CSS variables. The design uses blue as the main theme color, with a light background, white cards, dark text, and light blue table highlights.
+- A sidebar navigation menu
+- A main dashboard header
+- A monthly budget summary
+- Six expense category cards
+- Food
+- Transport
+- Rent
+- Entertainment
+- Savings
+- Utilities
 
-The colors are applied consistently to:
+The financial information is static because this project focuses on the visual dashboard structure rather than functionality.
 
-- Main headings
-- Section headings
-- Buttons
-- Table headers
-- Table rows
-- Form focus states
-- Other interface elements
+### 2. CSS Grid
 
-### 2. Typography
+CSS Grid is used for the main dashboard layout.
 
-I used Google Fonts to improve the readability and visual hierarchy of the application.
+The dashboard uses two main columns on larger screens:
 
-- Playfair Display is used for the main headings.
-- DM Sans is used for body text, labels, form controls, buttons, and table content.
+- Sidebar
+- Main content area
 
-The fonts are applied consistently throughout the page.
+CSS Grid is also used to arrange the six category cards into multiple columns.
 
-### 3. Expense Table Styling
+### 3. Flexbox
 
-The expense table was improved with:
+Flexbox is used inside different parts of the dashboard, including:
 
-- Borders around the table and cells
-- Collapsed borders
-- Padding inside cells
-- A dark blue table header
-- Alternating row colors
-- A hover effect when the mouse moves over a row
+- Sidebar navigation
+- Dashboard header
+- Budget summary
+- Category cards
+- Card content
 
-These changes make the expense information easier to read.
+This helps keep the dashboard elements aligned and organized.
 
-### 4. Add Expense Form Styling
+### 4. CSS Custom Properties
 
-The Add Expense form was improved with:
+The color theme is defined using CSS variables inside `:root`.
 
-- Consistent spacing
-- Padding inside inputs
-- Borders
-- Rounded corners
-- Matching typography
-- Focus effects
-- A styled Add Expense button
-- Pointer cursor on the button
+The variables include:
 
-### 5. CSS Box Model
+- Brand color
+- Accent color
+- Background color
+- Surface color
+- Primary text color
+- Secondary text color
+- Border color
 
-I used the CSS box model throughout the application.
+Using variables makes the theme easier to maintain and update.
 
-The page uses:
+### 5. Responsive Design
 
-- Margin to separate sections
-- Padding to create space inside cards
-- Borders to define sections
-- Border-radius to create rounded corners
+A media query is included for screens below 768px.
 
-The page heading, Add Expense form, and Expense Table are presented as separate visual cards.
+On smaller screens:
 
-## Files
+- The sidebar and main content become a single-column layout.
+- Navigation items can wrap onto multiple lines.
+- The dashboard header stacks vertically.
+- The budget summary uses the available width.
+- The category cards display in one column.
 
-- `index.html` - Contains the HTML structure and content.
-- `style.css` - Contains the visual design, colors, typography, table styling, form styling, and box model properties.
-- `README.md` - Explains the project and the improvements made in Week 3.
+The responsive layout was tested using the browser's DevTools Device Toolbar.
 
-## Previous Features
+### 6. Card Micro-interactions
 
-The project also includes:
+The category cards include hover and keyboard focus effects.
 
-- An expense table with sample data
-- An Add Expense form
-- A category dropdown
-- A date input
-- A budgeting tips YouTube video
-- A budget tracker image
-- A collapsible How to Use section
-- Advanced CSS selectors
+The effects use:
 
-## Future Development
+- `transform`
+- `box-shadow`
+- CSS transitions
 
-In future weeks, I will add JavaScript functionality so users can enter expenses and have them added to the expense table dynamically.
+The transition duration is 200ms, which keeps the interaction quick and subtle.
+
+The cards also use `tabindex="0"` so they can receive keyboard focus.
+
+### 7. Dark Theme
+
+A dark theme is included as a stretch goal using:
+
+```css
+@media (prefers-color-scheme: dark)
