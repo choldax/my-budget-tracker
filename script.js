@@ -10,14 +10,23 @@ function calculateBalance(budget, expenses) {
     return budget - expenses;
 }
 
-// Collect budget information from the user
 const userBudget = prompt("Enter your monthly budget:", monthlyBudget);
 
-// Convert the user input from text to a number
 monthlyBudget = Number(userBudget);
 
-// Collect expense information from the user
+if (isNaN(monthlyBudget)) {
+    console.warn("Invalid budget entered. Using default budget of $1500.");
+    monthlyBudget = 1500;
+}
+
 const userExpenses = prompt("Enter your total expenses:", currentExpenses);
+
+currentExpenses = Number(userExpenses);
+
+if (isNaN(currentExpenses)) {
+    console.warn("Invalid expenses entered. Using default expenses of $0.");
+    currentExpenses = 0;
+}
 
 // Convert the user input from text to a number
 currentExpenses = Number(userExpenses);
